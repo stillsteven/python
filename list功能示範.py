@@ -7,21 +7,21 @@ while True:
 
     while True:
         if (a == "insert"):
-            b = input("請輸入你要新增到串列的值：")
+            b = str(input("請輸入你要新增到串列的值："))
             c = int(input("請輸入你要插入到list的地方："))
             list.insert(c, b)
             break
         elif (a == "new"):
-            d = input("請輸入你要新增的值：")
+            d = str(input("請輸入你要新增的值："))
             list.append(d)
             break
         elif (a == "remove"):
-            e = input("請輸入你要刪除的數字：")
+            e = str(input("請輸入你要刪除的數字："))
             list.remove(e)
             break
         elif (a == "clear"):
             list.clear()
-            f = input("已經刪除字串中所有的數字")
+            f = str(input("已經刪除字串中所有的數字"))
             break
 
     print(list)
