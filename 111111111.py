@@ -12,7 +12,7 @@ def enterdict():  # 定義按鈕功能
     return(dict1)
 
 
-def show():  # 定義按鈕功能
+def show():  # 測試讀取資料用(寫完請註解掉)
     print(dict1)
     return ()
 
@@ -33,9 +33,9 @@ def guess():
         label7 = Label(window, text=(k)
                        ).grid(row=2, column=3)  # 隨機產生數字(1到4)
 
-    if ((k == 1 and e4.get() == 2) or (k == 2 and e4.get() == 3) or (k == 3 and e4.get() == 4) or (k == 4 and e4.get() == 1)):
+    if ((k == 1 and int(e4.get()) == 2) or (k == 2 and int(e4.get()) == 3) or (k == 3 and int(e4.get()) == 4) or (k == 4 and int(e4.get()) == 1)):
         label9 = Label(window, text="你輸").grid(row=3, column=3)
-    elif ((k == 2 and e4.get() == 1) or (k == 3 and e4.get() == 2) or (k == 4 and e4.get() == 3) or (k == 1 and e4.get() == 4)):
+    elif ((k == 2 and int(e4.get()) == 1) or (k == 3 and int(e4.get()) == 2) or (k == 4 and int(e4.get()) == 3) or (k == 1 and int(e4.get()) == 4)):
         label9 = Label(window, text="你贏").grid(row=3, column=3)
     else:
         label9 = Label(window, text="平手").grid(row=3, column=3)
@@ -99,7 +99,7 @@ label4 = Label(window, text="遊戲進行中", bg="white",
                width=15).grid(row=0, column=2)
 label5 = Label(window, text="你出").grid(row=1, column=1)
 label6 = Label(window, text="電腦出").grid(row=1, column=3)
-label8 = Label(window, text="結果是").grid(row=3, column=1)
+label8 = Label(window, text="結果").grid(row=3, column=1)  # 這行仍有錯誤待修改
 
 # 輸入框
 e4 = Entry(window)  # 你出什麼的輸入框
@@ -117,6 +117,7 @@ btn7 = Button(window, text="test", command=show)  # 測試讀取資料用(寫完
 btn4.grid(row=2, column=2)
 btn5.grid(row=4, column=1)
 btn6.grid(row=4, column=2)
-btn7.grid(row=4, column=3)
+btn7.grid(row=4, column=3)  # 測試讀取資料用(寫完請註解掉)
+
 
 window.mainloop()  # 第二個界面最後一行(程式結束)
