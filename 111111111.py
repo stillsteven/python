@@ -6,15 +6,13 @@ dict1 = {}
 
 
 def enterdict():  # 定義按鈕功能
-    dict1[e2.get()] = e3.get()
+    dict1[int(e2.get())] = e3.get()
     e2.delete(0, END)  # 按完確認加入後刪除e2裡的文字
     e3.delete(0, END)  # 按完確認加入後刪除e2裡的文字
-    return(dict1)
 
 
 def show():  # 測試讀取資料用(寫完請註解掉)
     print(dict1)
-    return ()
 
 
 def guess():
@@ -50,7 +48,6 @@ def playagain():
 
 # ========================================功能定義、界面分隔線========================================
 # 第一界面程式開始
-
 
 window = Tk()
 window.title("GUI遊戲")  # 標題
@@ -92,7 +89,7 @@ window.mainloop()  # 第一個界面最後一行
 # 以下是按下建立完成後的介面(第二個界面)
 window = Tk()
 window.title("GUI遊戲")  # 標題
-window.geometry("500x160")  # 視窗大小
+window.geometry("400x160")  # 視窗大小
 
 # 標籤
 label4 = Label(window, text="遊戲進行中", bg="white",
