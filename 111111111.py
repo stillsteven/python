@@ -118,3 +118,4 @@ btn7.grid(row=4, column=3)  # 測試讀取資料用(寫完請註解掉)
 
 
 window.mainloop()  # 第二個界面最後一行(程式結束)
+
