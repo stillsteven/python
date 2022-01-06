@@ -38,8 +38,8 @@ def guess():
     else:
         label9 = Label(window, text="平手").grid(row=3, column=3)
 
-    label8 = Label(window, text=("結果", dict1[int(e4.get())], "吃", dict1(k))).grid(
-        row=3, column=1)  # 這行仍有錯誤待修改
+    label8 = Label(window, text=("結果", dict1[int(e4.get())], "吃", dict1[k])).grid(
+        row=3, column=1) 
 
 
 def playagain():
