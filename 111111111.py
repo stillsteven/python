@@ -34,12 +34,15 @@ def guess():
     if ((k == 1 and int(e4.get()) == 2) or (k == 2 and int(e4.get()) == 3) or (k == 3 and int(e4.get()) == 4) or (k == 4 and int(e4.get()) == 1)):
         label9 = Label(window, text="你輸").grid(row=3, column=3)
     elif ((k == 2 and int(e4.get()) == 1) or (k == 3 and int(e4.get()) == 2) or (k == 4 and int(e4.get()) == 3) or (k == 1 and int(e4.get()) == 4)):
-        label9 = Label(window, text="你贏").grid(row=3, column=3)
+        label9 = Label(window, text="你1贏").grid(row=3, column=3)
     else:
         label9 = Label(window, text="平手").grid(row=3, column=3)
 
+    label8 = Label(window, text=("                                ")).grid(
+        row=3, column=1)
+
     label8 = Label(window, text=("結果", dict1[int(e4.get())], "吃", dict1[k])).grid(
-        row=3, column=1) 
+        row=3, column=1)
 
 
 def playagain():
@@ -121,5 +124,4 @@ btn7.grid(row=4, column=3)  # 測試讀取資料用(寫完請註解掉)
 
 
 window.mainloop()  # 第二個界面最後一行(程式結束)
-
 
