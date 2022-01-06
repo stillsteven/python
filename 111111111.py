@@ -50,6 +50,8 @@ def playagain():
     label7 = Label(window, text=" "
                    ).grid(row=2, column=3)  # 隨機產生數字(1到4)
     label9 = Label(window, text="      ").grid(row=3, column=3)
+    label8 = Label(window, text=("                                ")).grid(
+        row=3, column=1)
 
 
 # ========================================功能定義、界面分隔線========================================
@@ -124,4 +126,3 @@ btn7.grid(row=4, column=3)  # 測試讀取資料用(寫完請註解掉)
 
 
 window.mainloop()  # 第二個界面最後一行(程式結束)
-
