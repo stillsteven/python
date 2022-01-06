@@ -38,6 +38,9 @@ def guess():
     else:
         label9 = Label(window, text="平手").grid(row=3, column=3)
 
+    label8 = Label(window, text=("結果", dict1[int(e4.get())], "吃", dict1(k))).grid(
+        row=3, column=1)  # 這行仍有錯誤待修改
+
 
 def playagain():
     e4.delete(0, END)
@@ -96,7 +99,7 @@ label4 = Label(window, text="遊戲進行中", bg="white",
                width=15).grid(row=0, column=2)
 label5 = Label(window, text="你出").grid(row=1, column=1)
 label6 = Label(window, text="電腦出").grid(row=1, column=3)
-label8 = Label(window, text="結果").grid(row=3, column=1)  # 這行仍有錯誤待修改
+
 
 # 輸入框
 e4 = Entry(window)  # 你出什麼的輸入框
@@ -118,4 +121,5 @@ btn7.grid(row=4, column=3)  # 測試讀取資料用(寫完請註解掉)
 
 
 window.mainloop()  # 第二個界面最後一行(程式結束)
+
 
