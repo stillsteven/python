@@ -22,13 +22,13 @@ def play():
 def again():
     e4.delete(0,END)
     t8 = Label(y,text=" ").grid(row=2,column=3)
-    t9 = Label(y,text="                 ").grid(row=3,column=2)
+    t9 = Label(y,text="                 ").grid(row=3,column=1)
     t0 = Label(y,text="           ").grid(row=3,column=3)
 
 #====================================================================================================
 x = Tk()
 
-x.title("GUI檢覆")
+x.title("GUI檢覈")
 x.geometry("300x160")
 label = Label(x,text="Lebel字典準備").grid(row=0,column=2)
 
