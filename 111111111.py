@@ -34,7 +34,7 @@ def guess():
     if ((k == 1 and int(e4.get()) == 2) or (k == 2 and int(e4.get()) == 3) or (k == 3 and int(e4.get()) == 4) or (k == 4 and int(e4.get()) == 1)):
         label9 = Label(window, text="你輸").grid(row=3, column=3)
     elif ((k == 2 and int(e4.get()) == 1) or (k == 3 and int(e4.get()) == 2) or (k == 4 and int(e4.get()) == 3) or (k == 1 and int(e4.get()) == 4)):
-        label9 = Label(window, text="你1贏").grid(row=3, column=3)
+        label9 = Label(window, text="你贏").grid(row=3, column=3)
     else:
         label9 = Label(window, text="平手").grid(row=3, column=3)
 
